@@ -1,0 +1,11 @@
+/* Footer */
+
+footer {
+    margin-top: auto;
+    padding: 15px 15px;
+    width: auto;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
