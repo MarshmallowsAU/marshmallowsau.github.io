@@ -10,15 +10,18 @@ nav a {
     float: left;
     display: block;
     color: white;
+    padding: 20px 20px;
     text-align: center;
-    padding: 20px 20px; 
     text-decoration: none;
+    font-size: 25px;
     font-family: "Lucida Console", "Courier New", monospace;
-    min-width: 100px;
+    min-width: 160px;
+    transition: 0.5s;
+    border-radius: 18px;
 }
 
 nav a:hover {
     background-color: #C8ACD6;
-    color: #17153B;
+    color: black;
     font-weight: bold;
 }
