@@ -2,21 +2,22 @@
 
 nav {
     overflow: hidden;
-    background-color: #00000049;
+    background-color: black;
     position: fixed;
     width: 100%;
+    top: 0;
   }
   
 nav a {
     color: white;
-    padding: 20px 20px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
     font-family: "Lucida Console", "Courier New", monospace;
     min-width: 160px;
     transition: 0.5s;
-    border-radius: 18px;
+    border-radius: 25px;
 }
 
 nav a:hover {
