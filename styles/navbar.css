@@ -1,33 +1,40 @@
 /* Navbar */
 
 nav {
-    overflow: hidden;
-    background-color: black;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 2%;
   }
   
 nav a {
-    color: white;
+    color: #D1D7E0;
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Lucida Console", "Courier New", monospace;
     min-width: 160px;
     transition: 0.5s;
     border-radius: 25px;
 }
 
+nav a2 {
+    color: #D1D7E0;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
 nav a:hover {
-    background-color: white;
-    color: black;
-    font-weight: bold;
+    background-color: #D1D7E0;
+    color: #2D283E;
+    text-shadow:1px 0px 0px #2D283E;
 }
 
 nav div {
     display: inline;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

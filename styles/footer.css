@@ -11,9 +11,10 @@ footer {
 }
 
 footer a {
-    color: white;
+    transition: 0.5s;
+    color: #D1D7E0;
 }
 
 footer a:hover {
-    color: rgb(255, 3, 217);
+    color: #802BB1;
 }
