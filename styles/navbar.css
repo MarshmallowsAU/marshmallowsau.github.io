@@ -2,12 +2,11 @@
 
 nav {
     overflow: hidden;
-    background-color: transparent;
+    background-color: #00000049;
     position: fixed;
   }
   
 nav a {
-    float: left;
     display: block;
     color: white;
     padding: 20px 20px;
