@@ -7,7 +7,7 @@ nav {
   }
   
 nav a {
-    color: #D1D7E0;
+    color: white;
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -27,9 +27,10 @@ nav a2 {
 }
 
 nav a:hover {
-    color: #802BB1;
+    color: white;
+    background-color: #546A7B;
     text-shadow:1px 0px 0px #2D283E;
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 nav div {
