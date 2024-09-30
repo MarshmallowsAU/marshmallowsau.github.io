@@ -22,20 +22,21 @@ nav a {
     border-radius: 25px;
 }
 
-nav a2 {
-    margin: auto;
-    color: #D1D7E0;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Lucida Console", "Courier New", monospace;
-}
 
 nav a:hover {
     color: #050517;
     background-color: white;
     text-decoration: bold;
+}
+
+nav a2 {
+    margin: auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 nav div {

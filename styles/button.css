@@ -1,0 +1,48 @@
+
+
+.button {
+    background-color: #0D1F2D;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #546A7B;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 180px;
+  }
+  
+  .button:hover {
+    background-color: #546A7B;
+  }
+  
+  .button:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      padding: .75rem 1.5rem;
+    }
+  }
+  
+  .buttontext {
+    color: white;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+  }

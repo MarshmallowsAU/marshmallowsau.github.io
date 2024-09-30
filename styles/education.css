@@ -1,0 +1,42 @@
+.timeline-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+	color: white;
+	border-left: 2px solid black;
+  background: #546A7B;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #0000006a;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  margin: 0;
+}
+
+h5 {
+  color: white;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  padding: 0;
+  text-align: left;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
