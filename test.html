@@ -1,0 +1,63 @@
+<head>
+    <link rel="stylesheet" href="styles/test.css"/>
+    <link rel="stylesheet" href="styles/test-body.css"/>
+
+    <script>
+        function scrollInto(element) {
+            const ele = document.getElementById(element);
+            ele.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest',
+            });
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="sidebar">
+        <button onclick='scrollInto("#top");' class="navitem">
+            <p class="gradient-text">Jerry M Yang</p>
+        </button>
+        <button onclick='scrollInto("#education");' class="navitem">
+            <p class="gradient-text">| Education</p>
+        </button>
+        <button onclick='scrollInto("#projects");' class="navitem">
+            <p class="gradient-text">| Projects</p>
+        </button>
+        <button onclick='scrollInto("#resume");' class="navitem">
+            <p class="gradient-text">| Resume</p>
+        </button>
+        <button onclick='scrollInto("#contact");' class="navitem">
+            <p class="gradient-text">| Contact me</p>
+        </button>
+    </div>
+    <div class="main">
+        <div>
+            <a id="#top">
+                <h1>Jerry M Yang</h1>
+            </a>
+        </div>
+        <div>
+            <a id="#education">
+                <h1>Education</h1>
+            </a>
+        </div>
+        <div>
+            <a id="#projects">
+                <h1>Projects</h1>
+            </a>
+        </div>
+        <div>
+            <a id="#resume">
+                <h1>Resume</h1>
+            </a>
+        </div>
+        <div>
+            <a id="#contact">
+                <h1>Contact Me</h1>
+            </a>
+        </div>
+    </div>
+</body>
