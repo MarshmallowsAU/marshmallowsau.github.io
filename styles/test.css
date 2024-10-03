@@ -11,22 +11,15 @@
     width: 16px;
 }
 ::-webkit-scrollbar-track {
-    background: black;
+    background: --main-color;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--font-colour)
 }
 
-.sidebar {
-    height: 100%;
-    width: 14%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding-top: 1%;
-    padding-left: 1%;
-    background-color: var(--main-color);
-    box-shadow: 10px 0px 5px 0px var(--main-color);
+.container {
+    width: 50%;
+    margin: auto;
 }
 
 .navitem {
@@ -52,13 +45,6 @@
     font-weight: bolder;
 }
 
-.main {
-    padding-top: 1%;
-    margin-left: 20%;
-    height: 100%;
-    width: 80%;
-}
-
 a {
     text-decoration: none;
 }
@@ -77,7 +63,7 @@ h1 {
     font-family: var(--font-main);
     background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
     background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out;
+    animation: rainbow 2s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip:text;
     font-weight: bolder;
@@ -91,7 +77,7 @@ h1 {
     font-family: var(--font-main);
     background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
     background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out;
+    animation: rainbow 2s ease-in-out infinite;
     background-clip: text;
     -webkit-background-clip:text;
     font-weight: bold;
@@ -100,6 +86,147 @@ h1 {
 .gradient-text:hover {
     color:rgba(0,0,0,0);
 }
+
+/* CSS for Floating Buttons */
+
+.float {
+	position: fixed;
+	width: 70px;
+    height: 70px;
+	top: 5%;
+	background-color: aliceblue;
+	border-radius: 35px;
+    vertical-align: middle;
+    transition: 500ms;
+}
+
+.float:hover {
+    background-color: #111111;
+}
+
+.float-dropdown-parent {
+    position: fixed;
+	width: 70px;
+    height: 70px;
+	top: 5%;
+	background-color: aliceblue;
+	border-radius: 35px;
+    vertical-align: middle;
+    transition: 500ms;
+}
+
+.float-dropdown-parent:hover {
+    background-color: #111111;
+}
+
+.float-dropdown {
+    display: none;
+    position: fixed;
+	width: 70px;
+    height: 70px;
+	top: 5%;
+	background-color: aliceblue;
+	border-radius: 35px;
+    transition: 500ms;
+    animation: appear 0.5s;
+}
+
+.float-dropdown:hover {
+    background-color: #111111;
+}
+
+.float-dropdown-open {
+    display: block;
+    position: fixed;
+	width: 70px;
+    height: 70px;
+	top: 5%;
+	background-color: aliceblue;
+	border-radius: 35px;
+    transition: 500ms;
+    animation: vanish 0.5s;
+}
+
+.float-dropdown-open:hover {
+    background-color: #111111;
+}
+
+.gradient-text-button {
+    font-family: var(--font-main);
+    background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    font-weight: bolder;
+    color: #111111;
+    transition: 500ms;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.gradient-text-button:hover {
+    color:rgba(0,0,0,0);
+}
+
+.gradient-text-button-drop-parent {
+    font-family: var(--font-main);
+    background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    font-weight: bolder;
+    color: #111111;
+    transition: 500ms;
+    font-size: 50px;
+    text-align: center;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.gradient-text-button-drop-parent:hover {
+    color:rgba(0,0,0,0);
+}
+
+/* Nav-Button Fade In and Out Keyframes */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes vanish {
+    from {
+        display: block;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+/* Gradient Text Kayframes */
 
 @keyframes rainbow { 
     0%{background-position:left}
