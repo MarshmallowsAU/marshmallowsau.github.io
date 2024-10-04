@@ -21,71 +21,220 @@
         <div>
             <div class="float">
                 <button onclick='darkModeToggle()' id="dark-mode-button" class="gradient-text-button">
-                    <i class="bi bi-brightness-high-fill"></i>
+                    <a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>
                 </button>
             </div>
             <div class="float-dropdown-parent">
                 <button onclick='showDropDown();' id='drop-parent' class="gradient-text-button">
-                    <i class="bi bi-list"></i>
+                    <a href="#nothing" style="color: inherit;"><i class="bi bi-list"></i></a>
                 </button>
             </div>
-            <div class="float-dropdown" id="drop1" style="top: 15%;">
+            <div class="float-dropdown" id="drop1" style="top: 120px;">
                 <button onclick='scrollInto("#top");' class="gradient-text-button-drop" style="text-align: left;">
-                    <h3>Home</h3>
+                    <a href="#nothing" style="color: inherit;"><h3>Home</h3></a>
                 </button>
             </div>
-            <div class="float-dropdown" id="drop2" style="top: 25%;">
+            <div class="float-dropdown" id="drop2" style="top: 175px;">
                 <button onclick='scrollInto("#studies");' class="gradient-text-button-drop" style="text-align: left; ">
-                    <h3>Studies</h3>
+                    <a href="#nothing" style="color: inherit;"><h3>Studies</h3></a>
                 </button>
             </div>
-            <div class="float-dropdown" id="drop3" style="top: 35%;">
+            <div class="float-dropdown" id="drop3" style="top: 230px;">
+                <button onclick='scrollInto("#certifications");' class="gradient-text-button-drop" style="text-align: left; ">
+                    <a href="#nothing" style="color: inherit;"><h3>Certs</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop4" style="top: 285px;">
                 <button onclick='scrollInto("#projects");' class="gradient-text-button-drop" style="text-align: left;">
-                    <h3>Projects</h3>
+                    <a href="#nothing" style="color: inherit;"><h3>Projects</h3></a>
                 </button>
             </div>
-            <div class="float-dropdown" id="drop4" style="top: 45%;">
+            <div class="float-dropdown" id="drop5" style="top: 340px;">
                 <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
-                    <h3>Resume</h3>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop5" style="top: 55%;">
-                <button onclick='scrollInto("#bottom");' class="gradient-text-button-drop" style="text-align: left;">
-                    <h3>Contact</h3>
+                    <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
                 </button>
             </div>
         </div>
         <div>
-            <div style="padding-top: 10%;"></div>
+            <div style="padding-top: 150px;"></div>
                 <div class="container">
                     <div>
                         <a id="#intro">
-                            <h1 class="gradient-text" style="margin-bottom: 4%;">Hi, I'm Jerry</h1>
+                            <h1 class="gradient-text" style="margin-bottom: 20px;">Hi, I'm Jerry</h1>
                         </a>
-                        <div class="center" style="margin-bottom: 4%;">
+                        <div class="center" style="margin-bottom: 30px;">
                             <a href="https://www.linkedin.com/in/jerry-yang-7a9310266/" target="_blank" class="gradient-text social-button"><i class="bi bi-linkedin" ></i></a>
                             <a href="mailto:jmax.yang@gmail.com"  class="gradient-text social-button"><i class="bi bi-envelope-fill" ></i></a>
                             <a href="https://github.com/MarshmallowsAU" target="_blank" class="gradient-text social-button"><i class="bi bi-github"></i></a>
                         </div>
-                        <p>Currently studying a <b class="gradient-text">Bachelors of Computer Science</b>, majoring in <b class="gradient-text">Security Engineering</b></p>
-                        <p>at the <b class="gradient-text">University of New South Wales</b></p>
+                        <p>Currently studying a <b class="on-text">Bachelors of Computer Science</b>, majoring in <b class="on-text">Security Engineering</b></p>
+                        <p>at the <b class="on-text">University of New South Wales</b></p>
+                        <br>
+                        <p>
+                            I'm a computer science student with a passion for cybersecurity, with a greater interest in incident response, cloud security, and cyber governance. Through my
+                            <a onclick='scrollInto("#studies");' href="#studies" style="color: inherit; text-decoration: underline;"><b class="gradient-text">studies</b></a>, both through university and externally, I've
+                            developed a strong foundation in areas such as web application security, binary exploitation, ethical hacking, and more. Ontop of this I have interests outside security,
+                            mostly within full stack developement, which you can see in some of my <a onclick='scrollInto("#projects");' href="#projects" style="color: inherit; text-decoration: underline"><b class="gradient-text">projects</b></a>.
+                        </p>
                     </div>
+                    <div class="vertical-gap"></div>
                     <div>
                         <a id="#studies">
                             <h1 class="gradient-text">Studies</h1>
                         </a>
                         <div class="study-container">
                             <div class="study-container-child">
-                                <h2>University of New South Wales</h2>
-                                <h3>Bachelors of Computer Science (Security Engineering)</h3>
+                                <h2><span style="font-weight: bold;">University of New South Wales</span>2022 - 2024</h2>
+                                <h4>Bachelors of Computer Science (Security Engineering)</h4>
+                                <h4 style="font-weight: normal;">WAM: Distinction</h4>
+
+                                <button class="study-button" onclick="toggleCourses()">
+                                    <b class="gradient-text" id="show-hide-button" style="font-size: 20px;">Show Courses</b>
+                                </button>
+                                <div class="study-collapsible" id="course-dropdown">
+                                    <div class="courses">
+                                        <div class="course-title"><b>Cyber Security</b></div>
+                                        <div class="course-text">
+                                            <div> - COMP6843: Web Application Security & Testing <b class="on-text">(Extended)</b></div>
+                                            <div> - COMP6845: Digital Forensics & Incident Response <b class="on-text">(Extended)</b></div>
+                                            <div> - COMP6841: Security Engineering & Cyber Security <b class="on-text">(Extended)</b></div>
+                                            <div> - COMP6448: Security Masterclass (Cloud Security)</div>
+                                            <div> - COMP6447: System and Software Security Assessment</div>
+                                        </div>
+                                    </div>
+                                    <div class="courses">
+                                        <div class="course-title"><b>Software Development</b></div>
+                                        <div class="course-text">
+                                            <div> - COMP3900: Computer Science Project</div>
+                                            <div> - COMP3121: Algorithms and Programming Techniques</div>
+                                            <div> - COMP3311: Database Systems</div>
+                                            <div> - COMP2511: Object-Oriented Design & Programming</div>
+                                            <div> - COMP2521: Data Structures and Algorithms</div>
+                                            <div> - COMP1531: Software Engineering Fundamentals</div>
+                                        </div>
+                                    </div>
+                                    <div class="courses">
+                                        <div class="course-title"><b>Systems and Architecture</b></div>
+                                        <div class="course-text">
+                                            <div> - COMP3891: Operating Systems <b class="on-text">(Extended)</b></div>
+                                            <div> - COMP3331: Computer Networks & Applications</div>
+                                            <div> - COMP1521: Computer Systems Fundamentals</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="study-container">
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Australian National University</span>2020 - 2021</h2>
+                                <h4>ANU Extension Program (Engineering)</h4>
+                                <h4 style="font-weight: normal;">Grade: 92.74</h4>
+                            </div>
+                        </div>
+                        <div class="study-container">
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Dickson College</span>2020 - 2021</h2>
+                                <h4>BSSS Senior Secondary Certificate</h4>
+                                <h4 style="font-weight: normal;">ATAR: 98.15</h4>
                             </div>
                         </div>
                     </div>
+                    <div class="vertical-gap"></div>
+                    <div>
+                        <a id="#certifications">
+                            <h1 class="gradient-text">Certifications</h1>
+                        </a>
+                        <div class="study-container">
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Google Cybersecurity Certificate</span>Sept 2023</h2>
+                                <h4>Issued by Coursera</h4>
+                                <a href="https://www.credly.com/badges/2cf7b799-6cbe-4cb7-b4a1-407dfe91e4e1/" target="_blank">
+                                    <button class="study-button">
+                                        <b class="gradient-text" style="font-size: 20px;">Credly <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="vertical-gap"></div>
                     <div>
                         <a id="#projects">
                             <h1 class="gradient-text">Projects</h1>
                         </a>
+                        <div class="study-container">
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">ICPC Connect<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
+                                    COMP3900 Assignment
+                                </b></p>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;">
+                                    {DESCRIPTION}
+                                </p>
+                                <button class="study-button-not-clickable">
+                                    <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                </button>
+                                <button class="study-button-not-clickable" style="margin-left: 10px;">
+                                    <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                </button>
+                            </div>
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Intrusion<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
+                                    Lead Backend and Game Designer
+                                </b></p>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;">
+                                    Intrusion is a card game that models different cyber-attack and defense scenarios on a vulnerable system.
+                                    It aims to be a fun, interactive, and easy to understand intoduction to <b>Cyber Security</b>. 
+                                </p>
+                                <button class="study-button-not-clickable">
+                                    <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                </button>
+                                <button class="study-button-not-clickable" style="margin-left: 10px;">
+                                    <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                </button>
+                            </div>
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Binary Vulnerability Fuzzer<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
+                                    COMP6447 Assignment
+                                </b></p>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;">
+                                    {DESCRIPTION}
+                                </p>
+                                <a>
+                                    <button class="study-button-not-clickable">
+                                        <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                                <a>
+                                    <button class="study-button-not-clickable" style="margin-left: 10px;">
+                                        <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Twitter User Scraper</span>2023</h2>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
+                                    Creator
+                                </b></p>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;">
+                                    A Javascript Twitter (X now I guess) User Scraper built with Node.js. Using a browserless API you don't need any credentials to run it!
+                                    (This was built a while ago who knows if it still works)
+                                </p>
+                                <a>
+                                    <button class="study-button-not-clickable">
+                                        <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/MarshmallowsAU/Twitter-User-Scraper" target="_blank">
+                                    <button class="study-button" style="margin-left: 10px;">
+                                        <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="vertical-gap"></div>
                     <div>
                         <a id="#resume">
                             <h1 class="gradient-text">Resume</h1>

@@ -11,3 +11,7 @@ body {
   margin: auto;
   position: relative;
 }
+
+.vertical-gap {
+  min-height: 50px;
+}

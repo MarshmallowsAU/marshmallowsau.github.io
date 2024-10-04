@@ -62,12 +62,28 @@ h1 {
 h2 {
     color: var(--font-colour);
     font-family: var(--font-main);
-    font-size: 36px;
+    font-size: 40px;
     text-align: left;
     display: block;
     font-weight: bold;
-    padding-top: 25px;
     padding-left: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+}
+
+h4 {
+    color: var(--font-colour);
+    font-family: var(--font-main);
+    font-size: 20px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
 p {
@@ -75,6 +91,7 @@ p {
     font-family: var(--font-main);
     text-align: center;
     display: block;
+    color: aliceblue;
 }
 
 footer {
@@ -148,6 +165,23 @@ footer {
 }
 
 .gradient-text-button:hover {
+    
+}
+
+.on-text {
+    font-family: var(--font-main);
+    background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    font-weight: bolder;
+    color: #111111;
+    transition: 500ms;
+    font-size: 16px;
+    text-align: left;
+    border: none;
+    margin: 0;
     color:rgba(0,0,0,0);
 }
 
