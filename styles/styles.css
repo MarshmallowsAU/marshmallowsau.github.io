@@ -18,7 +18,7 @@
 }
 
 .container {
-    width: 50%;
+    width: 90%;
     margin: auto;
 }
 
@@ -52,11 +52,22 @@ a {
 h1 {
     color: var(--font-colour);
     font-family: var(--font-main);
-    font-size: 5em;
+    font-size: 90px;
     text-align: center;
     display: block;
     font-weight: bold;
     padding-top: 2%;
+}
+
+h2 {
+    color: var(--font-colour);
+    font-family: var(--font-main);
+    font-size: 36px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 p {
@@ -115,74 +126,6 @@ footer {
     color:rgba(0,0,0,0);
 }
 
-/* CSS for Floating Buttons */
-
-.float {
-	position: fixed;
-	width: 70px;
-    height: 70px;
-	top: 5%;
-	background-color: aliceblue;
-	border-radius: 35px;
-    vertical-align: middle;
-    transition: 500ms;
-    box-shadow: 0 0 20px white;
-}
-
-.float:hover {
-    background-color: #111111;
-}
-
-.float-dropdown-parent {
-    position: fixed;
-	width: 70px;
-    height: 70px;
-	top: 5%;
-	background-color: aliceblue;
-	border-radius: 35px;
-    vertical-align: middle;
-    transition: 500ms;
-    box-shadow: 0 0 20px white;
-}
-
-.float-dropdown-parent:hover {
-    background-color: #111111;
-}
-
-.float-dropdown {
-    display: none;
-    position: fixed;
-	width: 9em;
-    height: 4em;
-	top: 5%;
-	background-color: aliceblue;
-	border-radius: 1em;
-    transition: 500ms;
-    animation: appear 0.5s;
-    box-shadow: 0 0 20px white;
-}
-
-.float-dropdown:hover {
-    background-color: #111111;
-}
-
-.float-dropdown-open {
-    display: block;
-    position: fixed;
-	width: 9em;
-    height: 4em;
-	top: 5%;
-	background-color: aliceblue;
-	border-radius: 1em;
-    transition: 500ms;
-    animation: vanish 0.5s;
-    box-shadow: 0 0 20px white;
-}
-
-.float-dropdown-open:hover {
-    background-color: #111111;
-}
-
 .gradient-text-button {
     font-family: var(--font-main);
     background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
@@ -207,81 +150,6 @@ footer {
 .gradient-text-button:hover {
     color:rgba(0,0,0,0);
 }
-
-.gradient-text-button-drop {
-    font-family: var(--font-main);
-    background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    background-clip: text;
-    -webkit-background-clip:text;
-    font-weight: bolder;
-    color: #111111;
-    transition: 500ms;
-    font-size: 1.5em;
-    text-align: left;
-    border: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.gradient-text-button-drop:hover {
-    color:rgba(0,0,0,0);
-}
-
-.gradient-text-button-drop-parent {
-    font-family: var(--font-main);
-    background: linear-gradient(to right, var(--gradient-lef), var(--gradient-mid), var(--gradient-rig));
-    background-size: 200% 200%;
-    animation: rainbow 2s ease-in-out infinite;
-    background-clip: text;
-    -webkit-background-clip:text;
-    font-weight: bolder;
-    color: #111111;
-    transition: 500ms;
-    font-size: 50px;
-    text-align: center;
-    border: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.gradient-text-button-drop-parent:hover {
-    color:rgba(0,0,0,0);
-}
-
-/* Nav-Button Fade In and Out Keyframes */
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes vanish {
-    from {
-        display: block;
-        opacity: 1;
-    }
-
-    to {
-        display: none;
-        opacity: 0;
-    }
-}
-
 
 /* Gradient Text Kayframes */
 

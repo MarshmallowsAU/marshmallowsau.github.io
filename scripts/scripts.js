@@ -27,6 +27,16 @@ function showDropDown() {
     }
 }
 
+function darkModeToggle() {
+    if (document.getElementById("darkmode").style.color == "black") {
+        document.getElementById("darkmode").style.color = "white"
+        document.getElementById("dark-mode-button").innerHTML = '<i class="bi bi-brightness-high-fill"></i>';
+    } else {
+        document.getElementById("darkmode").style.color = "black"
+        document.getElementById("dark-mode-button").innerHTML = '<i class="bi bi-moon-fill"></i>';
+    }
+}
+
 function closeDropdown() {
     const dropdowns = document.querySelectorAll('.float-dropdown-open');
     dropdowns.forEach(function(dropdown) {

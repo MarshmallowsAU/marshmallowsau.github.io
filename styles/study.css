@@ -1,0 +1,14 @@
+/* CSS File for all Study Related Classes*/
+
+.study-container {
+    width: 100%;
+}
+
+.study-container-child {
+    width: 100%;
+    margin: auto;
+    background-color: #6767677f;
+    min-height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+}
