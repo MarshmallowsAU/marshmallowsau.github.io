@@ -165,7 +165,7 @@ footer {
 }
 
 .gradient-text-button:hover {
-    
+    color:rgba(0,0,0,0);
 }
 
 .on-text {

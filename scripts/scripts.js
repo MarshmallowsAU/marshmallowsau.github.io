@@ -15,11 +15,11 @@ function showDropDown() {
     if (document.getElementById("drop1").style.display == "block") {
         document.getElementById("drop-parent").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-list"></i></a>';
         closeDropdown();
-        for (const id of ["drop1", "drop2", "drop3", "drop4", "drop5"]) {
+        for (const id of ["drop1", "drop2", "drop3", "drop4", "drop5", "drop6"]) {
             document.getElementById(id).style.display = "none";
         }
     } else {
-        for (const id of ["drop1", "drop2", "drop3", "drop4", "drop5"]) {
+        for (const id of ["drop1", "drop2", "drop3", "drop4", "drop5", "drop6"]) {
             document.getElementById(id).style.display = "block";
         }
         document.getElementById("drop-parent").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-x"></i></a>';
@@ -47,14 +47,40 @@ function openDropdown() {
 /** Dark Mode Toggle **/
 
 function darkModeToggle() {
-    if (document.getElementById("darkmode").style.color == "black") {
-        document.getElementById("darkmode").style.color = "white"
+    const body = document.getElementById("main-body");
+    if (body.className == "body-light") {
+        body.classList.remove('body-light');
+        body.className = 'body';
         document.getElementById("dark-mode-button").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>';
+        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "container", "resume"]) {
+            removeInvertByClass(id);
+        }
     } else {
-        document.getElementById("darkmode").style.color = "black"
+        body.classList.remove('body');
+        body.className = 'body-light';
         document.getElementById("dark-mode-button").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-moon-fill"></i></a>';
+        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "container", "resume"]) {
+            invertElementsByClass(id);
+        }
     }
 }
+
+function invertElementsByClass(className) {
+    const elements = document.getElementsByClassName(className);
+    
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.filter = "invert(100%)";
+    }
+}
+
+function removeInvertByClass(className) {
+    const elements = document.getElementsByClassName(className);
+    
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.filter = "invert(0%)";
+    }
+}
+
 
 /** Courses Toggle **/
 

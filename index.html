@@ -15,17 +15,17 @@
 </head>
 
 
-<body>
+<body class="body" id="main-body">
     <a id="#top"></a>
     <div class="all-container">
         <div>
             <div class="float">
-                <button onclick='darkModeToggle()' id="dark-mode-button" class="gradient-text-button">
+                <button onclick='darkModeToggle()' id="dark-mode-button" class="gradient-text-button-drop-parent">
                     <a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>
                 </button>
             </div>
             <div class="float-dropdown-parent">
-                <button onclick='showDropDown();' id='drop-parent' class="gradient-text-button">
+                <button onclick='showDropDown();' id='drop-parent' class="gradient-text-button-drop-parent">
                     <a href="#nothing" style="color: inherit;"><i class="bi bi-list"></i></a>
                 </button>
             </div>
@@ -52,6 +52,11 @@
             <div class="float-dropdown" id="drop5" style="top: 340px;">
                 <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
                     <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop6" style="top: 395px;">
+                <button onclick='scrollInto("#ecs");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>ECs</h3></a>
                 </button>
             </div>
         </div>
@@ -165,17 +170,22 @@
                             <div class="study-container-child">
                                 <h2><span style="font-weight: bold;">ICPC Connect<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
                                 <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
-                                    COMP3900 Assignment
+                                    COMP3900 Assignment - SCRUM Master
                                 </b></p>
                                 <p style="text-align: left; padding-left: 25px; width: 80%;">
-                                    {DESCRIPTION}
+                                    <i>ICPC Connect</i> is a centralised system to both register for and manage ICPC Contests across Universities within the South Pacific.
+                                    It allows students to register, automatically assigning them to teams of 3 through algorithmic matching, and provides an administrative interface for both coaches and site coordinators. 
                                 </p>
-                                <button class="study-button-not-clickable">
-                                    <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
-                                </button>
-                                <button class="study-button-not-clickable" style="margin-left: 10px;">
-                                    <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
-                                </button>
+                                <a>
+                                    <button class="study-button-not-clickable">
+                                        <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                                <a>
+                                    <button class="study-button-not-clickable" style="margin-left: 10px;">
+                                        <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                    </button>
+                                </a>
                             </div>
                             <div class="study-container-child">
                                 <h2><span style="font-weight: bold;">Intrusion<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
@@ -186,12 +196,35 @@
                                     Intrusion is a card game that models different cyber-attack and defense scenarios on a vulnerable system.
                                     It aims to be a fun, interactive, and easy to understand intoduction to <b>Cyber Security</b>. 
                                 </p>
-                                <button class="study-button-not-clickable">
-                                    <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
-                                </button>
-                                <button class="study-button-not-clickable" style="margin-left: 10px;">
-                                    <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
-                                </button>
+                                <a>
+                                    <button class="study-button-not-clickable">
+                                        <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                                <a>
+                                    <button class="study-button-not-clickable" style="margin-left: 10px;">
+                                        <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Personal Website<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;"><b>
+                                    The Website You're On Right Now!
+                                </b></p>
+                                <p style="text-align: left; padding-left: 25px; width: 80%;">
+                                    This is my personal website written up in pure HTML and CSS. Nothing fancy! 
+                                </p>
+                                <a href="https://marshmallowsau.github.io/" target="_blank">
+                                    <button class="study-button">
+                                        <b class="gradient-text" style="font-size: 20px;"> Demo <i class="bi bi-box-arrow-up-right"></i> </b>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/MarshmallowsAU/marshmallowsau.github.io" target="_blank">
+                                    <button class="study-button" style="margin-left: 10px;">
+                                        <b class="gradient-text" style="font-size: 20px;"> Github <i class="bi bi-github"></i> </b>
+                                    </button>
+                                </a>
                             </div>
                             <div class="study-container-child">
                                 <h2><span style="font-weight: bold;">Binary Vulnerability Fuzzer<b class="on-text" style="padding-left: 10px;">(Ongoing)</b></span>2024</h2>
@@ -239,12 +272,18 @@
                         <a id="#resume">
                             <h1 class="gradient-text">Resume</h1>
                         </a>
+                        <iframe src="https://drive.google.com/file/d/19DhRH2Vzo3cW4Pojo5cn4l1VoRndkntb/preview" allow="autoplay" class="resume"></iframe>
+                    </div>
+                    <div class="vertical-gap"></div>
+                    <div>
+                        <a id="#ecs">
+                            <h1 class="gradient-text">Extra-Curriculars</h1>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="darkmode" style="color: black;"></div>
     <footer id="#bottom">
         <h1>test</h1>
     </footer>

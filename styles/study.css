@@ -39,7 +39,7 @@
 }
 
 .study-button:hover {
-    background-color: black;
+    background-color: #111111;
 }
 
 .study-button-not-clickable {
@@ -92,6 +92,15 @@
     min-height: 100px;
     border-left: solid 2px aliceblue;
     margin-top: 20px;
+}
+
+.resume {
+    width: 800px;
+    height: 1125px;
+    display:block;
+    margin: auto;
+    box-shadow: 0 0 10px aliceblue;
+    filter: invert(0%);
 }
 
 @keyframes appear {

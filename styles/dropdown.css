@@ -14,7 +14,7 @@
 }
 
 .float:hover {
-    background-color: #111111;
+    background-color: rgba(0,0,0,0);
 }
 
 .float-dropdown-parent {
@@ -32,7 +32,7 @@
 }
 
 .float-dropdown-parent:hover {
-    background-color: #111111;
+    background-color: rgba(0,0,0,0);
 }
 
 .float-dropdown {
