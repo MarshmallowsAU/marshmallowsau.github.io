@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="styles/body.css"/>
     <link rel="stylesheet" href="styles/dropdown.css"/>
     <link rel="stylesheet" href="styles/study.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script src="/scripts/scripts.js"></script>
@@ -50,13 +51,13 @@
                 </button>
             </div>
             <div class="float-dropdown" id="drop5" style="top: 340px;">
-                <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
+                <button onclick='scrollInto("#ecs");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>ECs</h3></a>
                 </button>
             </div>
             <div class="float-dropdown" id="drop6" style="top: 395px;">
-                <button onclick='scrollInto("#ecs");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>ECs</h3></a>
+                <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
                 </button>
             </div>
         </div>
@@ -269,22 +270,56 @@
                     </div>
                     <div class="vertical-gap"></div>
                     <div>
+                        <a id="#ecs">
+                            <h1 class="gradient-text">Extra-Curriculars</h1>
+                        </a>
+                        <div class="study-container">
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Societies</span></h2>
+                                <div class="extra-currs">
+                                    <div class="course-title"><span style="font-weight: bold;">UNSW SecSoc</span>2024</div>
+                                    <div class="course-text">
+                                        <h4 style="padding-left: 0;">The Security Society of UNSW</h4>
+                                        <h4 style="padding-left: 0; font-weight: normal;"> Marketing Subcomittee</h4>
+                                    </div>
+                                </div>
+                                <div class="extra-currs">
+                                    <div class="course-title"><span style="font-weight: bold;">UNSW MechSoc</span>2023</div>
+                                    <div class="course-text">
+                                        <h4 style="padding-left: 0;">School of Mechanical and Manufacturing Engineering Students Society</h4>
+                                        <h4 style="padding-left: 0; font-weight: normal;"> Marketing Subcomittee</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="study-container-child">
+                                <h2><span style="font-weight: bold;">Competitions / CTFs</span></h2>
+                                <div class="extra-currs">
+                                    <div class="course-text">
+                                        <h4 style="padding-left: 0; font-weight: normal;"> - <b>SECedu</b> The Australian Cyber Security Games</h4>
+                                        <h4 style="padding-left: 0; font-weight: normal;"> - <b>SecSoc</b> SCONES 2024 CTF </h4>
+                                        <h4 style="padding-left: 0; font-weight: normal;"> - <b>SecSoc</b> SCONES 2023 CTF <span class="on-text">(Winner)</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-gap"></div>
+                    <div>
                         <a id="#resume">
                             <h1 class="gradient-text">Resume</h1>
                         </a>
                         <iframe src="https://drive.google.com/file/d/19DhRH2Vzo3cW4Pojo5cn4l1VoRndkntb/preview" allow="autoplay" class="resume"></iframe>
-                    </div>
-                    <div class="vertical-gap"></div>
-                    <div>
-                        <a id="#ecs">
-                            <h1 class="gradient-text">Extra-Curriculars</h1>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer id="#bottom">
-        <h1>test</h1>
+        <div class="footer-container">
+            <a href="https://www.linkedin.com/in/jerry-yang-7a9310266/" target="_blank" class="gradient-text social-button"><i class="bi bi-linkedin" ></i></a>
+            <a href="mailto:jmax.yang@gmail.com"  class="gradient-text social-button"><i class="bi bi-envelope-fill" ></i></a>
+            <a href="https://github.com/MarshmallowsAU" target="_blank" class="gradient-text social-button"><i class="bi bi-github"></i></a>
+            <p stlye="margin-top: 50px">© 2024 Jerry Max Yang</p>
+        </div>
     </footer>
 </body>

@@ -52,14 +52,14 @@ function darkModeToggle() {
         body.classList.remove('body-light');
         body.className = 'body';
         document.getElementById("dark-mode-button").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>';
-        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "container", "resume"]) {
+        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "float-dropdown-open", "container", "resume"]) {
             removeInvertByClass(id);
         }
     } else {
         body.classList.remove('body');
         body.className = 'body-light';
         document.getElementById("dark-mode-button").innerHTML = '<a href="#nothing" style="color: inherit;"><i class="bi bi-moon-fill"></i></a>';
-        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "container", "resume"]) {
+        for (const id of ["float", "float-dropdown-parent", "float-dropdown", "float-dropdown-open", "container", "resume"]) {
             invertElementsByClass(id);
         }
     }

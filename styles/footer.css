@@ -1,0 +1,12 @@
+footer {
+    margin-top: 100px;
+    height: 110px;
+}
+
+.footer-container {
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    padding-top: 25px;
+    text-align: center;
+}

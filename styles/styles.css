@@ -185,6 +185,15 @@ footer {
     color:rgba(0,0,0,0);
 }
 
+.extra-currs {
+    width: 100%;
+    margin: auto;
+    min-height: 100px;
+    border-left: solid 2px aliceblue;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
 /* Gradient Text Kayframes */
 
 @keyframes rainbow { 
