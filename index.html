@@ -20,48 +20,6 @@
     <a id="#top"></a>
     <div class="all-container">
         <div>
-            <div class="float">
-                <button onclick='darkModeToggle()' id="dark-mode-button" class="gradient-text-button-drop-parent">
-                    <a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>
-                </button>
-            </div>
-            <div class="float-dropdown-parent">
-                <button onclick='showDropDown();' id='drop-parent' class="gradient-text-button-drop-parent">
-                    <a href="#nothing" style="color: inherit;"><i class="bi bi-list"></i></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop1" style="top: 120px;">
-                <button onclick='scrollInto("#top");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>Home</h3></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop2" style="top: 175px;">
-                <button onclick='scrollInto("#studies");' class="gradient-text-button-drop" style="text-align: left; ">
-                    <a href="#nothing" style="color: inherit;"><h3>Studies</h3></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop3" style="top: 230px;">
-                <button onclick='scrollInto("#certifications");' class="gradient-text-button-drop" style="text-align: left; ">
-                    <a href="#nothing" style="color: inherit;"><h3>Certs</h3></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop4" style="top: 285px;">
-                <button onclick='scrollInto("#projects");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>Projects</h3></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop5" style="top: 340px;">
-                <button onclick='scrollInto("#ecs");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>ECs</h3></a>
-                </button>
-            </div>
-            <div class="float-dropdown" id="drop6" style="top: 395px;">
-                <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
-                    <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
-                </button>
-            </div>
-        </div>
-        <div>
             <div style="padding-top: 150px;"></div>
                 <div class="container">
                     <div>
@@ -233,7 +191,8 @@
                                     COMP6447 Assignment
                                 </b></p>
                                 <p style="text-align: left; padding-left: 25px; width: 80%;">
-                                    {DESCRIPTION}
+                                    Developed a black box fuzzer to identify vulnerabilities in binaries by generating and mutating inputs to trigger incorrect program states such as crashes and invalid memory writes. 
+                                    It aims to explore multiple code paths by creating diverse inputs (e.g empty files, null bytes, large files) to stress-test binaries.
                                 </p>
                                 <a>
                                     <button class="study-button-not-clickable">
@@ -311,6 +270,48 @@
                         <iframe src="https://drive.google.com/file/d/19DhRH2Vzo3cW4Pojo5cn4l1VoRndkntb/preview" allow="autoplay" class="resume"></iframe>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div>
+            <div class="float">
+                <button onclick='darkModeToggle()' id="dark-mode-button" class="gradient-text-button-drop-parent">
+                    <a href="#nothing" style="color: inherit;"><i class="bi bi-brightness-high-fill"></i></a>
+                </button>
+            </div>
+            <div class="float-dropdown-parent">
+                <button onclick='showDropDown();' id='drop-parent' class="gradient-text-button-drop-parent">
+                    <a href="#nothing" style="color: inherit;"><i class="bi bi-list"></i></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop1" style="top: 120px;">
+                <button onclick='scrollInto("#top");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>Home</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop2" style="top: 175px;">
+                <button onclick='scrollInto("#studies");' class="gradient-text-button-drop" style="text-align: left; ">
+                    <a href="#nothing" style="color: inherit;"><h3>Studies</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop3" style="top: 230px;">
+                <button onclick='scrollInto("#certifications");' class="gradient-text-button-drop" style="text-align: left; ">
+                    <a href="#nothing" style="color: inherit;"><h3>Certs</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop4" style="top: 285px;">
+                <button onclick='scrollInto("#projects");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>Projects</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop5" style="top: 340px;">
+                <button onclick='scrollInto("#ecs");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>ECs</h3></a>
+                </button>
+            </div>
+            <div class="float-dropdown" id="drop6" style="top: 395px;">
+                <button onclick='scrollInto("#resume");' class="gradient-text-button-drop" style="text-align: left;">
+                    <a href="#nothing" style="color: inherit;"><h3>Resume</h3></a>
+                </button>
             </div>
         </div>
     </div>
