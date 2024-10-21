@@ -91,12 +91,12 @@ function toggleCourses() {
         courses.className = 'study-collapsible';
         courses.style.display = "none";
         document.getElementById("show-hide-button").innerHTML = 'Show Courses';
-        document.body.style.height = '5990px';
+        document.body.style.height = '4520px';
     } else {
         courses.style.display = "block";
         courses.classList.remove('study-collapsible');
         courses.className = 'study-collapsible-open';
         document.getElementById("show-hide-button").innerHTML = 'Hide Courses';
-        document.body.style.height = '6460px';
+        document.body.style.height = '4990px';
     }
 }
