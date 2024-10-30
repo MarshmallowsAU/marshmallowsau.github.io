@@ -60,10 +60,6 @@
     color: black;
 }
 
-.study-button-not-clickable:hover {
-    background-color: #505050;
-}
-
 .course-title {
     color: var(--font-colour);
     font-family: var(--font-main);
