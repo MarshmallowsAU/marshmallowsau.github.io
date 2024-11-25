@@ -14,7 +14,7 @@
 }
 
 .float:hover {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0);
 }
 
 .float-dropdown-parent {
@@ -32,7 +32,7 @@
 }
 
 .float-dropdown-parent:hover {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0);
 }
 
 .float-dropdown {
@@ -51,6 +51,23 @@
 }
 
 .float-dropdown:hover {
+    background-color: #111111;
+}
+
+.float-dropdown-scroll {
+    display: none;
+    position: fixed;
+	width: 50px;
+    height: 50px;
+    top: 50px;
+	background-color: aliceblue;
+	border-radius: 20px;
+    transition: 500ms;
+    animation: vanish 0.5s;
+    box-shadow: 0 0 10px aliceblue;
+}
+
+.float-dropdown-scroll:hover {
     background-color: #111111;
 }
 

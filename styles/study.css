@@ -42,6 +42,22 @@
     background-color: #111111;
 }
 
+.project-button {
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: none;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px aliceblue;
+    transition: 500ms;
+}
+
+.project-button:hover {
+    background-color: #111111;
+}
+
 .study-button-not-clickable {
     margin-left: 25px;
     margin-top: 20px;
@@ -57,6 +73,23 @@
 }
 
 .study-button-not-clickable .gradient-text {
+    color: black;
+}
+
+.project-button-not-clickable {
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: none;
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+    background-color: gray;
+    box-shadow: 0 0 10px gray;
+    transition: 500ms;
+    text-decoration: line-through;
+}
+
+.project-button-not-clickable .gradient-text {
     color: black;
 }
 
