@@ -1,0 +1,62 @@
+{
+    "projects": [
+        {
+            "p1": {
+                "name": "Binary Vulnerability Fuzzer",
+                "symbols": [
+                    "<i class=\"devicon-python-plain-wordmark\"></i>"
+                    ],
+                "short": "This project was an assignment for COMP6447 - System and Software Security Assessment.",
+                "long": [
+                    "For this task we developed a black box binary fuzzer, which given compiled binaries and valid sample inputs, mutated the inputs in order to trigger incorrect program states. We created our own fuzzing harness and developed mutations for varying filetypes (such as paintext, JSON, CSV, XML, JPEG, and more). Our aims were to touch multiple codepaths within a binary, both mutating the original input or creating new inputs, to cause any form of an incorrect program state."
+                    ],
+                "source_link": null,
+                "demo_link": null
+            }
+        }, {
+            "p2": {
+                "name": "ICPC Connect",
+                "symbols": [
+                    "<i class=\"devicon-typescript-plain\"></i>",
+                    "<i class=\"devicon-postgresql-plain-wordmark\"></i>",
+                    "<i class=\"devicon-react-original-wordmark\"></i>"
+                    ],
+                "short": "This project was an assignment for COMP3900 - Info Tech Project",
+                "long": [
+                    "Given a real industry and academic client, we created a fully functional platform that would facilitate the management and registration for and of competitive programming competitions. My role as SCRUM master was to facilite the operations of the team of 5, including meetings, sprint planning, retrospectives, as well as general leadership duties.",
+                    "This platform would allow for students to register for certain programming contests occuring within their region. This would algorithmically match persons into compatible teams, based on varying factors. Allowing students to sign up as an individual, as a pair, or a full team of three.",
+                    "This platform also allows for coaches to more easily organise teams from their Universities, preventing the need for coaches to manually assign and moderate teams. We also allow site coordinators to easily view and export information surrounding the teams, and members attending a competition hosted at a site."
+                    ],
+                "source_link": null,
+                "demo_link": null
+            }
+        }, {
+            "p3": {
+                "name": "Intrusion",
+                "symbols": [
+                    "<i class=\"devicon-java-plain-wordmark\"></i>"
+                    ],
+                "short": "",
+                "long": [
+                    "Intrusion is a personal project founded by my friends and I. In this project we aim to develop an interactive digital card game that covers basic cyber security princicples. My role in this project is leading both backend and game design aspects. This includes developing and refining game design elements, and leading the development of all backend components including game logic."
+                    ],
+                "source_link": null,
+                "demo_link": null
+            }
+        }, {
+            "p4": {
+                "name": "Personal Website",
+                "symbols": [
+                    "<i class=\"devicon-html5-plain-wordmark\"></i>",
+                    "<i class=\"devicon-css3-plain-wordmark\"></i>"
+                    ],
+                "short": "My personal website that you're on right now! There really isn't much to talk about to be honest.<br><br>\n<b>I sure do hope you're enjoying it!</b>",
+                "long": [
+                    ""
+                    ],
+                "source_link": "https://github.com/MarshmallowsAU/marshmallowsau.github.io",
+                "demo_link": "https://jerrymyang.com"
+            }
+        }
+    ]
+}
