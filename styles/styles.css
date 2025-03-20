@@ -2,9 +2,9 @@
     --main-color: #111111;
     --font-main: "Poppins", sans-serif;
     --font-colour: aliceblue;
-    --gradient-lef: purple;
-    --gradient-mid: orange;
-    --gradient-rig: yellow;
+    --gradient-lef: violet;
+    --gradient-mid: cyan;
+    --gradient-rig: violet;
 }
 
 ::-webkit-scrollbar {
