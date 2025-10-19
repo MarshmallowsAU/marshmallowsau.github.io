@@ -1,0 +1,375 @@
+:root {
+  --background-light: #060912;
+  --background-dark: #B0B0B0;
+  
+  --gradient-color-1: #17203c;
+  --gradient-color-2: #3A506B;
+}
+
+@keyframes arc-rotation {
+  from {
+    transform: translate3d(-50%, -50%, 0px) rotate(0deg);
+  }
+  
+  to {
+    transform: translate3d(-50%, -50%, 0px) rotate(360deg);
+  }
+}
+
+body.menu-toggled {
+  background-color: var(--background-dark);
+}
+
+body.menu-toggled > #menu {
+  pointer-events: all; 
+}
+
+body.menu-toggled > #menu > #menu-toggle > span:first-of-type {
+  transform: translate3d(0px, 8px, 0px) rotate(45deg);
+}
+
+body.menu-toggled > #menu > #menu-toggle > span:nth-of-type(2) {
+  opacity: 0;
+  transform: translate3d(-5px, 0px, 0px);
+}
+
+body.menu-toggled > #menu > #menu-toggle > span:nth-of-type(3) {
+  transform: translate3d(0px, -8px, 0px) rotate(-45deg);
+}
+
+body.menu-toggled > #menu > #menu-toggle > #menu-toggle-label > .word {
+  opacity: 0;
+  transform: translate3d(-30%, 0px, 0px) skew(20deg) scaleX(1.2);  
+  transition: opacity 250ms cubic-bezier(.71, .19, .87, .33), 
+    transform 250ms cubic-bezier(.71, .19, .87, .33);
+}
+
+body.menu-toggled > #menu > #menu-toggle > #menu-toggle-label > .word:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+body.menu-toggled > #menu > #menu-gradient {
+  height: 200vmax;
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 0px);
+  transition: height 600ms cubic-bezier(.58, .2, .62, .93), 
+    width 600ms cubic-bezier(.58, .2, .62, .93), 
+    transform 600ms cubic-bezier(.58, .2, .62, .93), 
+    opacity 400ms;
+  width: 200vmax;
+}
+
+body.menu-toggled > #menu > #menu-gradient-blur {
+  opacity: 1; 
+}
+
+body.menu-toggled > #menu > #menu-arcs-wrapper {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 600ms cubic-bezier(.16, .68, .25, .83), 
+    opacity 600ms cubic-bezier(.87, .12, .92, .39); 
+}
+
+body.menu-toggled > #menu > #menu-links > .link {  
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms ease-in;  
+}
+
+body.menu-toggled > #menu > #menu-links > .link:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+body.menu-toggled > #menu > #menu-links > .link:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+body.menu-toggled > #menu > #menu-links > .link:nth-of-type(4) {
+  transition-delay: 200ms;
+}
+
+body.menu-toggled > #menu > #menu-links > .link:nth-of-type(5) {
+  transition-delay: 250ms;
+}
+
+#menu {
+  height: 100vh;
+  left: 0px;
+  overflow: hidden;
+  pointer-events: none; 
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 100;
+}
+
+#menu > #menu-toggle {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 50px;
+  justify-content: center;
+  left: 30px;
+  padding: 0px;
+  pointer-events: all;
+  position: absolute;
+  top: 30px;
+  width: 50px;
+  z-index: 5;
+}
+
+#menu > #menu-toggle:hover > span:nth-of-type(2),
+#menu > #menu-toggle:hover > span:nth-of-type(3){
+  transform: translate3d(0px, 0px, 0px);
+}
+
+#menu > #menu-toggle > span {
+  background-color: var(--background-dark);
+  display: block;
+  height: 3px;
+  transition: transform 250ms;
+  width: 24px;
+}
+
+#menu > #menu-toggle > span:nth-of-type(2) {
+  transform: translate3d(5px, 0px, 0px);
+}
+
+#menu > #menu-toggle > span:nth-of-type(3) {
+  transform: translate3d(-2px, 0px, 0px);
+}
+
+#menu > #menu-toggle > #menu-toggle-label {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  gap: 5px;
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  transform: translate3d(100%, 0px, 0px);
+  white-space: nowrap;
+}
+
+#menu > #menu-toggle > #menu-toggle-label > .word {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  transition: opacity 250ms, transform 250ms;
+}
+
+#menu > #menu-gradient {
+  background: radial-gradient(
+    var(--background-light) 12%,
+    var(--gradient-color-1) 25%,
+    var(--gradient-color-2) 100%
+  );
+  height: 300vmax;
+  left: 0px;  
+  opacity: 0;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0px) scale(4);
+  transition: height 600ms cubic-bezier(.75, .1, .89, .36),
+    width 600ms cubic-bezier(.75, .1, .89, .36),
+    transform 600ms cubic-bezier(.75, .1, .89, .36),
+    opacity 700ms cubic-bezier(.9, .02, .97, .28);
+  top: 0px;
+  width: 300vmax;
+  z-index: 1;
+}
+
+#menu > #menu-gradient-blur {
+  backdrop-filter: blur(1vmax);
+  inset: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 600ms cubic-bezier(.87, .12, .92, .39);
+  z-index: 2;
+}
+
+#menu > #menu-arcs-wrapper {
+  height: clamp(600px, 200vmax, 6000px);
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transform: scale(1.15) translate3d(20%, 20%, 0px);
+  transition: transform 600ms cubic-bezier(.87, .12, .92, .39), 
+    opacity 600ms cubic-bezier(.87, .12, .92, .39);  
+  width: clamp(600px, 200vmax, 6000px);
+  z-index: 3;
+}
+
+#menu > #menu-arcs-wrapper > #menu-arcs {
+  animation: arc-rotation 100s linear infinite;
+  height: 100%;
+  left: 0px;  
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  will-change: transform;
+}
+
+#menu > #menu-arcs-wrapper > #menu-arcs > .menu-arc {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-dasharray: 2,10;
+  stroke-width: 1;
+}
+
+#menu > #menu-links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  inset: 0px;
+  justify-content: center;
+  position: absolute;
+  z-index: 4;
+}
+
+#menu > #menu-links > .link {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+  opacity: 0;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 250ms ease-in;
+  width: 200px;
+}
+
+#menu > #menu-links > .link:hover > .label {
+  transform: translate3d(6%, 0px, 0px);
+}
+
+#menu > #menu-links > .link:hover > .index {
+  transform: translate3d(20%, 0px, 0px);
+}
+
+#menu > #menu-links > .link:hover > .anchor:before {
+  opacity: 0.15;
+  transform: translate3d(-50%, -50%, 0px) scale(1.5);
+}
+
+#menu > #menu-links > .link:hover > .anchor:after {
+  border-color: cyan;
+  transform: translate3d(-50%, -50%, 0px) scale(1.1);
+}
+
+#menu > #menu-links > .link > .anchor {
+  background-color: #B0B0B0;
+  height: clamp(4px, 0.4vmax, 12px);
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-500%, -100%, 0px) rotate(45deg);
+  transition: transform 250ms;
+  width: clamp(4px, 0.4vmax, 12px);
+}
+
+#menu > #menu-links > .link > .anchor:before,
+#menu > #menu-links > .link > .anchor:after {
+  content: "";
+  height: 300%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  transition: transform 250ms, border-color 250ms;
+  width: 300%;
+}
+
+#menu > #menu-links > .link > .anchor:before {
+  border: 1px solid cyan;  
+  opacity: 0;
+}
+
+#menu > #menu-links > .link > .anchor:after {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#menu > #menu-links > .link > .index {
+  color: rgb(255, 255, 255, 0.25);
+  font-size: 0.8em;
+  transition: transform 250ms;
+}
+
+#menu > #menu-links > .link > .label {
+  color: white;
+  font-size: 2em;
+  transition: transform 250ms;
+}
+
+#content {
+  align-items: center;
+  display: flex;
+  gap: 2em;
+  height: 100vh;
+  justify-content: center;
+}
+
+#content > i {
+  color: rgb(30, 30, 30);
+  font-size: clamp(4em, 8vmax, 8em);
+}
+
+#content > .fa-plus {
+  font-size: clamp(2em, 4vmax, 4em);
+}
+
+@media (min-width: 1000px) and (max-width: 2699px) {  
+  body.menu-toggled > #menu > #menu-links > .link {
+    transition: transform 400ms cubic-bezier(.16, .68, .25, .83), 
+      opacity 500ms cubic-bezier(.87, .12, .92, .39);  
+  }
+  
+  #menu > #menu-gradient {
+    transform: translate3d(-50%, -50%, 0px) scale(8);
+  }
+  
+  #menu > #menu-links > .link {
+    position: absolute;
+    transform: translate3d(300%, 800%, 0px) scale(1.25);
+    transition: transform 500ms cubic-bezier(.62, .16, .86, .45), 
+      opacity 400ms cubic-bezier(.16, .68, .25, .83);
+  }
+  
+  #menu > #menu-links > .link > .anchor {
+    top: 0%;
+    transform: translate3d(-350%, -100%, 0px) rotate(45deg);
+  }
+  
+  #menu > #menu-links > .link:first-of-type {
+    left: 14.8vmax;
+    top: 14.8vmax;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 2099px) {
+  #menu > #menu-links > .link:nth-of-type(2) {
+    left: 41.3vmax;
+    top: 30vmax;
+  }
+
+  #menu > #menu-links > .link:nth-of-type(3) {
+    left: 50.2vmax;
+    top: 10vmax;
+  }
+
+  #menu > #menu-links > .link:nth-of-type(4) {
+    left: 70.6vmax;
+    top: 40vmax;
+  }
+
+  #menu > #menu-links > .link:nth-of-type(5) {
+    left: 78.7vmax;
+    top: 20vmax;
+  }
+}
+

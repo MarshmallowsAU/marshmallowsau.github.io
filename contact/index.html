@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jerry M Yang - Home</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>Jerry M Yang - Contact</title>
+  <link rel="stylesheet" href="/contact/contact.css" />
   <link rel="stylesheet" href="/navbar/navbar.css" />
   <script src="/navbar/navbar.js"></script>
+  <script src="/contact/contact.js"></script>
 
   <!-- External Stuff -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:wght@400;500&display=swap" rel="stylesheet">  
@@ -26,13 +28,26 @@
     <div class="main">
       <div class="letter">J</div>
       <div class="main-text">
-        <h1>Hey, I'm <span class="highlight">Jerry</span>.</h1>
-        <h2>I'm a <span class="highlight">Security Engineer</span> working in detection engineering and secure systems design.</h2>
-        <p>Currently a Security Engineer at the ATO.</p>
+        <h1>Let's <span class="highlight" style="font-weight: bold; font-style: italic;">talk</span>.</h1>
+        <div style="display: flex;">
+          <div style="border-right: 2px solid #444; width: 200px;">
+            <h2>Contact</h2>
+            <p><a href="mailto:jmax.yang@gmail.com">jmax.yang@gmail.com</a></p>
+          </div>
+          <div style="border-right: 2px solid #444; width: 200px; padding-left: 24px;">
+            <h2>Based in</h2>
+            <p><a href="https://www.google.com/maps/place/Canberra+ACT/" target="_blank">Canberra, Australia</a></p>
+          </div>
+          <div style="width: 200px; padding-left: 24px;">
+            <h2>Find me</h2>
+            <div id="contact"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="divider-line"></div>
   </div>
+  <script>contact()</script>
   <script>navbar();</script>
 </body>
 </html>

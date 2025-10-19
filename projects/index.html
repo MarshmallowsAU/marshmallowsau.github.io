@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jerry M Yang - Home</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>Jerry M Yang - Projects</title>
+  <link rel="stylesheet" href="/projects/projects.css" />
   <link rel="stylesheet" href="/navbar/navbar.css" />
   <script src="/navbar/navbar.js"></script>
+  <script src="/projects/projects.js"></script>
 
   <!-- External Stuff -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +27,15 @@
     <div class="main">
       <div class="letter">J</div>
       <div class="main-text">
-        <h1>Hey, I'm <span class="highlight">Jerry</span>.</h1>
-        <h2>I'm a <span class="highlight">Security Engineer</span> working in detection engineering and secure systems design.</h2>
-        <p>Currently a Security Engineer at the ATO.</p>
+        <h1>Projects</span></h1>
+        <p>“A goal without a plan is just a wish.” - Lao Tzu </p>
       </div>
     </div>
-    <div class="divider-line"></div>
+    <div class="divider-line">
+      <div id="projects"></div>
+    </div>
   </div>
+  <script>projects()</script>
   <script>navbar();</script>
 </body>
 </html>
