@@ -14,35 +14,41 @@
 }
 
 body {
-    background-color: #0d0d2b;
     color: #c8c8c8;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    height: 100vh;
-    background-color: #0B132B;
+    background-color: black;
     background-image: radial-gradient(circle farthest-corner at top left, rgb(0, 0, 0) 0%, rgba(225, 243, 97, 0) 50%), radial-gradient(circle farthest-corner at bottom right, #1C2541 0%, rgba(204, 104, 119, 0) 33%), radial-gradient(circle farthest-corner at top right, #3A506B 0%, rgba(155, 221, 240, 0) 50%), radial-gradient(ellipse at bottom center, #1C2541 0%, rgba(254, 43, 0, 0) 80%);
     margin: 0px;
-    overflow: hidden;
     padding: 0px;
     transition: background-color 600ms;
     animation: fade-in 2s;
+    min-height: 100vh;
+    height: 100%;
+    background-size: cover;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     position: relative;
     width: 1080px;
+    max-width: 90vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     margin: auto;
+    padding-top: 20vh;
+    min-height: 80vh;
+    height: auto;
 }
 
 .main {
     display: flex;
     align-items: flex-start;
     position: relative;
-    max-width: 800px;
+    width: 800px;
+    max-width: 90vw;
     z-index: 2;
     padding-bottom: 1rem;
 }
@@ -108,10 +114,12 @@ body {
 .contact {
   position: absolute;
   width: 100%;
+  max-width: 90vw;
 }
 
 .contact p {
     display: flex;
+    max-width: 90vw;
 }
 
 .contact a {
@@ -125,4 +133,18 @@ body {
 
 .contact a:hover {
   color: #f4f0e6;
+}
+
+.contact-box-container {
+    width: 100%;
+    max-width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.contact-box {
+    width: 200px;
+    max-width: 75vw;
+    padding-bottom: 24px;
 }
