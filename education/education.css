@@ -106,16 +106,6 @@ body {
     position: relative;
 }
 
-.timeline:before {
-    content: '';
-    position: absolute;
-    top: calc(15% + 5px);
-    bottom: calc(35% - 5px);
-    width: 2px;
-    left: calc(25% + 24px);
-    background: #444;
-}
-
 .timeline:after {
     content: "";
     display: table;
