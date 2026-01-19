@@ -172,8 +172,13 @@ body {
     padding-top: 10px;
 }
 
-a {
+.clickable {
+    text-decoration: underline;
     color: #f4f0e6;
     font-weight: bold;
-    text-decoration: underline;
+    transition: 1s;
+}
+
+.clickable:hover {
+    color: #E49273;
 }

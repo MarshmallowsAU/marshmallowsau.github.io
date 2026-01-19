@@ -14,12 +14,12 @@ function projectsContents() {
     projectsInfo = [
         ["Personal", "LDAP Query and Filter Builder", "2026", "Creator", [
           "Quick and easy DOM tree based method of creating LDAP queries and filters. All based in your browser, and all built with HTML, CSS, and JS.",
-          "Take a look: <a href=\"/projects/ldapbuilder\" target=\"_blank\">[Here]</a>"
+          "Take a look: <a href=\"/projects/ldapbuilder\" target=\"_blank\" class=\"clickable\">Click Me!</a>"
         ]],
 
         ["Personal", "Personal Website", "2025", "The website you're on right now!", [
           "This is my personal website written up in pure HTML, CSS and JS.",
-          "Back to home: <a href=\"/\" target=\"_blank\">[Here]</a>"
+          "Back to home: <a href=\"/\" target=\"_blank\" class=\"clickable\">Click Me!</a>"
         ]],
 
         ["COMP3900 UNSW", "ICPC Connect", "2024", "SCRUM Master", [
