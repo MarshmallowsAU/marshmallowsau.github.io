@@ -12,10 +12,10 @@ function experience() {
 
 function experienceContents() {
     experienceInfo = [
-        ["ATO", "Graduate Security Engineer", "2025", "Present", [
+        ["ATO", "Graduate Security Engineer", "Jul 2025", "Present", [
           "Designing, implementing, and maintaining detection engineering systems and infastructure supporting security operations center teams."
         ]],
-        ["ATO", "Graduate Business and Systems Analyst", "2025", "2025", [
+        ["ATO", "Graduate Business and Systems Analyst", "Feb 2025", " Jun 2025", [
           "Analyst for critical authentication and authorisation systems underpinning the ATO\'s authenticated online services."
         ]]
     ]

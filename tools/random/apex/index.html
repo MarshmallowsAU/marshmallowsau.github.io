@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerry M Yang - Random Apex</title>
+  <link rel="stylesheet" href="/tools/random/random.css" />
+  <link rel="stylesheet" href="/tools/random/checkbox.css" />
+  <link rel="stylesheet" href="/navbar/navbar.css" />
+  <script src="/navbar/navbar.js"></script>
+  <script src="/tools/random/random.js"></script>
+  <script src="/tools/random/apex/apex.js"></script>
+
+  <!-- External Stuff -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:wght@400;500&display=swap" rel="stylesheet">  
+  <script src="https://kit.fontawesome.com/1ee8f271b9.js"></script> 
+  
+  <!-- Favicon Stuff-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+<body>
+  <div id="menu"></div>
+  <div class="container">
+    <div class="main">
+      <div class="letter">Λ</div>
+      <div class="main-text">
+        <h1>Apex Legends Random Character and Weapons</h1>
+        <p>If you get a carepack item or someone you don't have just roll again! (I am lazy)</p>
+      </div>
+    </div>
+    <div class="divider-line"></div>
+    <div>
+      <div class="controls">
+        <button class="button" onclick="roll()">Roll</button>
+        <div class="checkbox">
+          <input class="checkbox" type="checkbox" id="characterCheckbox">
+          <label for="characterCheckbox">
+            Character
+          </label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox" type="checkbox" id="loadoutCheckbox" style="padding-left: 50px;">
+          <label for="loadoutCheckbox">
+            Loadout
+          </label>
+        </div>
+      </div>
+      <div id="results">
+      </div>
+    </div>
+  </div>
+  <script>navbar();</script>
+</body>
+</html>

@@ -157,6 +157,17 @@ body {
     font-style: italic;
 }
 
+
+.wide {
+    display: none;
+}
+
+@media (min-width: 1010px) {
+    .wide {
+        display: block;
+    }
+}
+
 @keyframes scroll{
     0% { transform: translateY(0%); }
     22% { transform: translateY(0%); }
