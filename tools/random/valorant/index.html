@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/navbar/navbar.css" />
   <script src="/navbar/navbar.js"></script>
   <script src="/tools/random/random.js"></script>
+  <script src="/tools/random/valorant/valorant.js"></script>
 
   <!-- External Stuff -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +27,24 @@
   <div id="menu"></div>
   <div class="container">
     <div class="main">
-      <div class="letter">Λ</div>
+      <div class="logo"><img src="/tools/random/valorant/assets/ValoLogo.png"></img></div>
       <div class="main-text">
-        <h1>Valorant Random Character</h1>
-        <h1>This one isn't done yet, I will get to it!</h1>
+        <h1>Random Character</h1>
         <p>If you get someone you don't have just roll again! (I am lazy)</p>
       </div>
     </div>
     <div class="divider-line"></div>
     <div>
-
+      <div class="controls">
+        <button class="button" onclick="roll()">Roll</button>
+        <label style="padding-left: 25px; padding-right: 10px;" for="rating">Select value:</label><br>
+        <div class="value" style="padding-right: 10px;">
+          <span id="sliderValue">3</span>
+        </div>
+        <input
+          type="range" id="rating" min="1" max="5" step="1" value="3" oninput="handleSliderChange(this.value)">
+      </div>
+      <div id="results"></div>
     </div>
   </div>
   <script>navbar();</script>

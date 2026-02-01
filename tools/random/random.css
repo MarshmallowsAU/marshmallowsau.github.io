@@ -306,3 +306,40 @@ body {
     max-width: 100%;
     margin-top: 8px;
 }
+
+.valorant-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    max-height: 50vh;
+}
+
+.valorant-column-chr {
+    padding: 0 4px;
+    border: 2px solid #f4f0e6;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #000000, #2c2c2c6b);
+    height: 45vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valorant-column-chr img {
+    max-height: 95%;
+    max-width: 150%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 71px;
+    max-width: 115px;
+    padding-right: 25px;
+}
