@@ -12,14 +12,14 @@ function experience() {
 
 function experienceContents() {
     experienceInfo = [
-        ["ATO", "Security Engineer", "Feb 2026", "Present", [
-          "Designing, implementing, and maintaining systems, infastructure, and tools used by security operations teams."
+        ["ATO", "Security Engineer & Threat Hunter", "Feb 2026", "Present", [
+          "Designing, implementing, and maintaining systems, infastructure, and tools used by security operations teams. Hunting for adversary behviour and validating detection mechanisms."
         ]], 
         ["ATO", "Graduate Security Engineer", "Jul 2025", "Feb 2026", [
-          "Designing, implementing, and maintaining systems, infastructure, and tools used by security operations teams."
+          "Ditto, minus the threat hunting"
         ]],
         ["ATO", "Graduate Business and Systems Analyst", "Feb 2025", " Jun 2025", [
-          "Analyst for critical authentication and authorisation systems underpinning the ATO\'s authenticated online services."
+          "Analyst for critical authentication and authorisation systems underpinning the organisation's authenticated online services."
         ]]
     ]
 
@@ -28,7 +28,8 @@ function experienceContents() {
     for (let i = 0; i < experienceInfo.length; i++) {
       inner += `<div class="entry">
             <div class="title">
-              <h3>` + experienceInfo[i][2] + ` - ` + experienceInfo[i][3] + `</h3>
+              <h3>` + experienceInfo[i][3] + `</h3>
+              <h3>` + experienceInfo[i][2] + `</h3>
               <p>` + experienceInfo[i][0] + `</p>
             </div>
             <div class="body">

@@ -13,8 +13,7 @@ function contact() {
 function contactContents() {
     contactLinks = [
         ["https://www.linkedin.com/in/jerry--yang/", "bi bi-linkedin"],
-        ["https://github.com/MarshmallowsAU", "bi bi-github"],
-        ["https://www.instagram.com/jerry._.yang/", "bi bi-instagram"]
+        ["https://github.com/MarshmallowsAU", "bi bi-github"]
     ]
 
     inner = "<p>\n"

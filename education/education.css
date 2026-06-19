@@ -102,7 +102,10 @@ body {
 .timeline {
     width: 800px;
     max-width: 90vw;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     position: relative;
 }
 
@@ -174,4 +177,16 @@ body {
 
 .entry .body ul li {
     padding-top: 10px;
+}
+
+.timeline h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.timeline .divider-line {
+    border-top: 2px solid #444;
+    padding-top: 20px;
 }
